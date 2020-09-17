@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  padding: 0;
+  overflow: auto;
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  left: 45%;
+}
+
+#genel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 3%;
+  justify-content: center;
+}
+
+#leftSide {
+  position: relative;
+  width: 60%;
+  left: 1%;
+}
+
+#rightSide {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #eeeeee;
+  border-radius: 3%;
+  width: 300px;
+  height: 370px;
+}
+
+.ustsag {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.altsag {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+#other1 {
+  margin: 5%;
+  padding-left: 25px;
+  line-height: 25%;
+}
+
+.fotodiv {
+  width: 30%;
+}
+
+.foto {
+  width: 100%;
+  border-radius: 15%;
+}
+
+#phone, #email, #name, #adr, #city {
+  color: #4F4F4F;
+  width: 70%;
+}
+
+.btnn {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10% 0;
+  border-radius: 6px;
+}
+
+#bttn {
+  position: relative;
+  left: 50%;
+  background-color: #f2994a;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: auto;
+  height: 3em;
+}
+
+.fiyat {
+  color: #f2994a;
+}
+
+.deleted {
+  font-size: 12px;
+  color: black;
+  opacity: 0.5;
+}
+
+#total {
+  display: flex;
+  flex-direction: column;
+}
+
+.tot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #BDBDBD;
+  font-family: Mon, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
