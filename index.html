@@ -6,47 +6,51 @@
     <title>checkoutForm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./FONTS/Montserrat-Regular.ttf">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Checkout</h1>
     <div id="genel">
     <div  id="leftSide">
         <div class="solust">
-        <form action="#">Contact information <br>
-            <label for="email">Email <br>
-                 <input type="email" name="mail" id="email" placeholder="Enter your e-mail">
+        <form action="#"><h3>Contact information</h3> <br>
+            <label for="email" id="emaill">Email <br>
+                 <input type="email" name="mail" id="email" placeholder=" Enter your e-mail" required><i class="fas fa-envelope"></i>
             </label><br>
-                 <label for="phone">Phone <br>
-            <input type="tel" name="tele" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..."></label>
+                 <label for="phone" id="phonee">Phone <br>
+            <input type="tel" name="tele" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone..."><i class="fas fa-phone-alt"></i></label>
         </form>
         </div>
         <br>
 
         <div class="solalt">
 
-            <form action="#"> Shipping Address <br>
-                <label for="name"> Full name <br>
-                    <input type="text" name="fName" id="name" placeholder="Enter your Full name...">
+            <form action="#" ><h3>Shipping Address</h3> <br>
+                <label for="name" id="namee"> Full name <br>
+                    <input type="text" name="fName" id="name" placeholder="Enter your Full name..."><i class="fas fa-user"></i>
                 </label> <br>
-                <label for="adr">Address <br>
-                    <input type="text" name="adress" id="adr">
+                <label for="adr" id="homee">Address <br>
+                    <input type="text" name="adress" id="adr"><i class="fas fa-home"></i>
                 </label> <br>
-                <label for="city">City <br>
-                    <input type="text" name="city" id="city" placeholder="Enter your city...">    
+                <label for="city" id="cityy">City <br>
+                    <input type="text" name="city" id="city" placeholder="Enter your city..."> <i class="fas fa-city"></i>
                 </label> <br> <br>
-                <label for="country">Country <br>
-                    <select name="country" id="cntry">
-                        <option value="Turkey">Turkey</option>
+                <div id="cnt">
+                <label for="contry" id="country">Country <br> 
+                    <select name="country" id="cntry"> 
+                        <option value="Turkey">Turkey</option> 
                         <option value="Germany">Germany</option>
                         <option value="USA">USA</option>
                         <option value="Canada">Canada</option>
                         <option value="UK">UK</option>
-                    </select>
+                    </select> 
+                    <i class="fas fa-globe-europe" aria-hidden="true"></i>
                 </label>
-                 <label for="post">Post Code <br>
-                    <input type="text" name="pCode" id="post" placeholder="Enter your postal code...">
-                </label> <br> <br>
-                 <label for=""><input type="checkbox" name="" id="" placeholder="see this"> See this information next time
+                 <label for="post" id="postt">Post Code <br>
+                    <input type="text" name="pCode" id="post" placeholder="Enter your postal code..."> <i class="fas fa-mail-bulk"></i>
+                </label>
+                </div> <br> <br> <br>
+                 <label for=""><input type="checkbox" name="" id="see" > <span id="spanlı"> See this information next time</span>
                 </label>
                 <br>
 
@@ -63,8 +67,8 @@
                 <div class="fotodiv"><img src="./IMG/photo1.png" alt="canta" class="foto"></div>
                 <div id="other1">
                     <div >Vintage Backbag</div><br>
-                    <p class="fiyat">54.99 <span class="deleted"> <del>94.99</del></span></p></label><br> <br> <br>
-                    <div class="btnn"><span>-</span><span>1</span><span>+</span></div>
+                    <p class="fiyat"><strong>54.99</strong><span class="deleted"> <del>94.99</del></span></p></label><br> <br> <br>
+                    <div class="btnn"><i class="fas fa-minus" aria-hidden="true"></i>1 <i class="fas fa-plus" aria-hidden="true"></i></div>
                 </div>
             </section>
           
@@ -72,8 +76,8 @@
             <div class="fotodiv"><img src="./IMG/photo2.png" alt="ayakkabı" class="foto"></div>
             <div id="other1">
                 <div >Vintage Backbag</div><br>
-                <p class="fiyat">74.99 <span class="deleted"> <del>124.99</del></span></p></label><br><br> <br>
-                <div class="btnn"><span>-</span><span>1</span><span>+</span></div>
+                <p class="fiyat"><strong>74.99</strong><span class="deleted"> <del>124.99</del></span></p></label><br><br> <br>
+                <div class="btnn"><i class="fas fa-minus" aria-hidden="true"></i>1<i class="fas fa-plus" aria-hidden="true"></i></div>
                 </div>
             </section>
             <div id="total">
@@ -87,21 +91,15 @@
 
 
     </div>
-    
-    
-
-    
-
-    <script src="">
-        function gonder(){
-            var email=document.getElementById("email").value;
-            console.log(email);
-        }
-    </script>
     </div>
-    <div><br><br>
+    
+    
 
-        <button onclick="gonder()" id="bttn" type="submit">Continue</button>
+    
+
+         <div>
+
+        <button  id="btton" type="submit">Continue</button>
     
         </div>
 </body>

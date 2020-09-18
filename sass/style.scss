@@ -4,6 +4,7 @@ body{
     overflow: auto;
     display:block;
     width: 100%;
+    overflow-x: hidden;
     
 
 }
@@ -11,12 +12,16 @@ h1{
     position: relative;
     left: 45%;
 }
+h3{
+    color: black;
+}
 #genel{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0px 3%;
     justify-content: center;
+    color: #4F4F4F;
 }
 
 
@@ -26,6 +31,70 @@ h1{
     position: relative;
     width: 60%;
     left: 1%;
+}
+.solust{
+    color: #4F4F4F
+}
+#emaill,#phonee,#namee,#homee, #cityy, #country, #postt{
+    position: relative;
+}
+#email, #phone, #name, #adr, #city, #cntry, #post, #postt{
+    padding:0px 0px 0px 25px;
+
+}
+
+.fa-envelope,.fa-phone-alt,.fa-user, .fa-home, .fa-city, .fa-globe-europe, {
+    position: absolute;
+    color: #828282;
+    font-size: 14px;
+    top: 57%;
+    left: 1%;
+    display: block;
+}
+.fa-mail-bulk{
+    position: absolute;
+    color: #828282;
+    font-size: 14px;
+    top: 57%;
+    left: 15%;
+    display: block;
+    
+}
+
+#cnt{
+    display: flex;
+    
+}
+#post{
+    box-sizing: border-box;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cntry{
+    display: block;
+    box-sizing:border-box;
+    
+        display: flex;
+        
+}
+    #post{
+        box-sizing: border-box;
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+    #cntry{
+        display: block;
+        box-sizing:border-box;
+}
+    
+
+
+.solalt{
+    color: #4F4F4F
 }
 
 
@@ -37,9 +106,15 @@ h1{
     background-color: #eeeeee;
     border-radius: 3%;
     width: 300px;
-    height: 370px;
+    height: 400px;
 
 }
+
+
+#id{
+    color: #4F4F4F
+}
+
 .ustsag{
     display: flex;
     flex-direction: row;
@@ -48,7 +123,7 @@ h1{
       
       
       
-  }
+}
 .altsag{
     display: flex;
     flex-direction: row;
@@ -66,47 +141,67 @@ h1{
 
 
 .fotodiv{
-   width: 30%;
+   width: 40%;
 
 }
 .foto{
     width: 100%;
     border-radius: 15%;
-  
-    
-  
+ 
 }
-#phone,#email, #name, #adr, #city
-{
-    color: #4F4F4F;
-    width: 70%;
-}
+
 .btnn{
     text-align: center;
     border: 1px solid black;
-    padding: 10% 0;
+    padding: 15% 0;
     border-radius: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-weight: 900;
+}
+.fa-plus, .fa-minus{
+    opacity: 1;
+    border: 0px solid gray;
+    border-radius: 5px;
+    background:  #e0e0e0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 12px;
+    
+    
+ 
+} 
+
+.fa-plus{
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    content: "\f067";
 }
 
-#bttn{
-    position: relative ;
-    left: 50%;
-    background-color: #f2994a;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    width: auto;
-    height: 3em;
-      
-  }
+.fa-minus{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    content: "\00B1" ;
+}
+
+#phone,#email, #name, #adr, #city{
+    color: #4F4F4F;
+    width: 70%;
+}
+
+
+
 
 .fiyat{
     color: #f2994a
 }
 
-  .deleted{
+.deleted{
       font-size: 12px;
       color: black;
       opacity: 0.5;
@@ -119,11 +214,27 @@ h1{
 }
 .tot{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid #BDBDBD;
     font-family: Mon, Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px 5px;
- 
+ }
+#btton{
+    position: sticky;
+    top: 90%;
+    left:50%;
+    background-color: #f2994a;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 3em;
+    
+}
+
+.fa-plus:hover, .fa-minus:hover{
+    border: 1px solid black;
 }
